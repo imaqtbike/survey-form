@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">
+    <h2 class="normal-text">Coding survey form</h3>
+    <h4 class="description"><i> thank you for taking the time to help us improve our site </i></h2>
+    </div>
+<div class="surveyform">
+<form action="#">
+    <div class="form-group">
+    <label for="fullname" ">Name</label> <br>
+    <input type="text" name="name" placeholder="Enter your Name" id="fullname" class="input-field" required> <br>
+    </div>
+<div class="form-group">
+    <label for="email">Email</label> <br>
+    <input type="text" name="useremail" placeholder="Enter your Email" id="email" class="input-field" required> <br>
+</div>
+<div class="form-group">
+    <label for="age">Age (optional) </label> <br>
+    <input type="number" name="quantity" min="1" max="99" placeholder="Age" id="age" class="input-field"> <br>
+</div>
+<div class="form-group current-role">
+    <label for="role"> Which option best describes your current role? </label> <br>
+<select name="role" id="role" class="input-field"> <br>
+    <option value="" disabled selected >Select current role</option>
+    <option value="student">Student</option>
+    <option value="full-time-job"> Full-Time Job </option>
+    <option value="full-time-learner"> Full-Time Learner </option>
+    <option value="prefer-not-to-say"> Prefer not to say </option>
+    <option value="other"> Other </option>
+</select>
+</div>
+<div class="form-group ">
+    <br>
+    <label for="recommend"> Would you recommend freeCodeCamp to a friend? </label> <br>
+    <input type="radio" id="yes" name="agreeness" value="yes">
+    <label for="yes">Definitely</label> <br>
+    <input type="radio" id="maybe" name="agreeness" value="maybe">
+    <label for="maybe">Maybe</label> <br>
+    <input type="radio" id="not-sure" name="agreeness" value="not-sure">
+    <label for="not-sure"> Not sure </label> <br>
+</div>
+<div class="form-group">
+<label for="feature">What is your favorite feature of freeCodeCamp?</label> <br>
+<select name="feature" id="feature" class="input-field" > <br>
+    <option value="" disabled selected>Select an option</option>
+    <option value="challenges">Challenges</option>
+    <option value="project">Project</option>
+    <option value="community">Community</option>
+    <option value="source-open">Open source </option>
+</select> 
+<br>
+</div>
+<div class="form-group">
+<p>What would you like to see improved? (Check all that apply)</p>
+<input type="checkbox" id="frontend" name="frontend" value="frontend-project">
+<label for="frontend">Front-end Projects</label> <br>
+<input type="checkbox" id="backend" name="backend" value="backend-project">
+<label for="backend">Back-end Projects</label> <br>
+<input type="checkbox" id="data-visual" name="data" value="data-visualization">
+<label for="data-visual">Data Visualization</label> <br>
+<input type="checkbox" id="open-source-community" name="community" value="open-soure-community">
+<label for="open-source-community">Open Source Community</label> <br>
+<input type="checkbox" id="help-room" name="help-room" value="gitter-help-rooms">
+<label for="help-room"> Gitter help rooms</label> <br>
+<input type="checkbox" name="video" id="video" value="video">
+<label for="video">Video</label> <br>
+<input type="checkbox" name="wiki" id="wiki" value="wiki">
+<label for="wiki">Wiki</label> <br>
+<input type="checkbox" name="forum" id="forum" value="forum">
+<label for="forum">Forum</label> <br>
+<input type="checkbox" name="additional-courses" id="courses" value="additional-courses">
+<label for="courses">Additional Course</label> <br>
+</div>
+<div class="form-group">
+<label for="review">Any comments or suggestions?</label> <br>
+<textarea name="comment" id="comment" cols="30" rows="50" class="input-field"></textarea>
+</div>
+
+<div class="form-group">
+<button type="submit">
+Submit
+</button> 
+</div>
+
+
+
+</form>
+    </div>
+</body>
+</html>
